@@ -2,7 +2,7 @@
 
 // Replace <USERNAME_DATABASE>, <USERNAME>, and <PASSWORD> below with your actual DB, user, and password.
  
- $dbh = pg_connect("host=localhost dbname=<USERNAME_DATABASE> user=<USERNAME> password=<PASSWORD>");
+ $dbh = pg_connect("host=ec2-54-197-250-40.compute-1.amazonaws.com dbname=d6vf676cch33b8 user=nmdexguksvensg password=xfzSyA2k-ZwDMr0XZ5QvlYb6bG");
  if (!$dbh) {
      die("Error in connection: " . pg_last_error());
  }       
@@ -25,7 +25,6 @@
 
  
  pg_free_result($result);       
-
 
  pg_close($dbh);
 ?> 
