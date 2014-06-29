@@ -1,0 +1,171 @@
+/* Variable declaration */
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  background: #444444 url("http://nickbrombal.com/images/bg_pixel-grey.jpg") repeat fixed;
+}
+
+#wrapper {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 320px;
+}
+
+.button {
+  float: left;
+  height: 64px;
+  width: 64px;
+  margin: 0 8px;
+  background-color: #777;
+  cursor: pointer;
+  box-shadow: 3px 3px #2E2E2E;
+}
+.button [class^="icon-"] {
+  display: inline-block;
+  width: 100%;
+  line-height: 64px;
+  text-align: center;
+  height: 64px;
+  font-size: 38px;
+  background: -webkit-linear-gradient(white, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button [class^="icon-"]:before {
+  display: initial;
+}
+
+#star {
+  background-color: #cccc52;
+}
+
+#facebook {
+  background-color: #52a3cc;
+}
+
+#beaker {
+  background-color: #52cc52;
+}
+
+#bug {
+  background-color: #cc5252;
+}
+
+/* Modal overlay styling */
+#overlay {
+  display: none;
+  z-index: 5;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+#overlay #screen {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+#overlay .dialog {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 500px;
+  background-color: #777;
+}
+#overlay .dialog .label-dialog {
+  float: left;
+  height: 100px;
+  width: 100px;
+  background-color: #444;
+  text-align: center;
+  vertical-align: top;
+}
+#overlay .dialog .label-dialog [class^="icon-"] {
+  line-height: 100px;
+  font-size: 60px;
+  color: #333;
+}
+#overlay .dialog .body-dialog {
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  width: 350px;
+}
+#overlay .dialog .body-dialog p {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  font: 14px roboto;
+  color: #EEE;
+  vertical-align: middle;
+}
+#overlay .dialog .body-dialog p span {
+  font-weight: 700;
+}
+#overlay .dialog .ok-dialog {
+  float: left;
+  height: 100px;
+  width: 50px;
+  background-color: #333;
+  text-align: center;
+  vertical-align: top;
+}
+#overlay .dialog .ok-dialog [class^="icon-"] {
+  line-height: 100px;
+  font-size: 30px;
+  color: #EEE;
+}
+#overlay .dialog .ok-dialog:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+#overlay #dialog-star .label-dialog [class^="icon-"] {
+  color: #cccc52;
+}
+#overlay #dialog-star .ok-dialog {
+  background-color: #cccc52;
+}
+#overlay #dialog-star .ok-dialog:hover {
+  background-color: #dddd41;
+}
+#overlay #dialog-facebook .label-dialog [class^="icon-"] {
+  color: #52a3cc;
+}
+#overlay #dialog-facebook .ok-dialog {
+  background-color: #52a3cc;
+}
+#overlay #dialog-facebook .ok-dialog:hover {
+  background-color: #41a9dd;
+}
+#overlay #dialog-beaker .label-dialog [class^="icon-"] {
+  color: #52cc52;
+}
+#overlay #dialog-beaker .ok-dialog {
+  background-color: #52cc52;
+}
+#overlay #dialog-beaker .ok-dialog:hover {
+  background-color: #41dd41;
+}
+#overlay .dialog:nth-of-type(5) .label-dialog [class^="icon-"] {
+  color: #cc5252;
+}
+#overlay .dialog:nth-of-type(5) .ok-dialog {
+  background-color: #cc5252;
+}
+#overlay .dialog:nth-of-type(5) .ok-dialog:hover {
+  background-color: #dd4141;
+}
