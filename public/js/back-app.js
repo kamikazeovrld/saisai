@@ -65,10 +65,10 @@ app.VoteView = Backbone.View.extend({
     },
     addVote: function(e){
         e.preventDefault();
-        if(!isLoggedIn()){
+        /*if(!isLoggedIn()){
             var modal = new app.ModalView({modal: 'facebook'});
             return false;
-        }
+        }*/
         this.addOneVote();
 //        cast_votes++;
         this.showSuccess();

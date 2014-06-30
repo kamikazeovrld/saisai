@@ -45,41 +45,42 @@
 | the active record class
 */
 
-$active_group = 'default';
+$active_group = 'development';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'new_username';
-$db['default']['password'] = 'new_username';
-$db['default']['database'] = 'new_database_name';
-$db['default']['dbdriver'] = 'postgre';
-$db['default']['dbprefix'] = '';
-$db['default']['pconnect'] = TRUE;
-$db['default']['db_debug'] = TRUE;
-$db['default']['cache_on'] = FALSE;
-$db['default']['cachedir'] = '';
-$db['default']['char_set'] = 'utf8';
-$db['default']['dbcollat'] = 'utf8_general_ci';
-$db['default']['swap_pre'] = '';
-$db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
-//$db['default']['port'] = 5432;
+$db['development']['hostname'] = 'localhost';
+$db['development']['username'] = 'new_username';
+$db['development']['password'] = 'new_username';
+$db['development']['database'] = 'new_database_name';
+$db['development']['dbdriver'] = 'postgre';
+$db['development']['dbprefix'] = '';
+$db['development']['pconnect'] = TRUE;
+$db['development']['db_debug'] = TRUE;
+$db['development']['cache_on'] = FALSE;
+$db['development']['cachedir'] = '';
+$db['development']['char_set'] = 'utf8';
+$db['development']['dbcollat'] = 'utf8_general_ci';
+$db['development']['swap_pre'] = '';
+$db['development']['autoinit'] = TRUE;
+$db['development']['stricton'] = FALSE;
+//$db['development']['port'] = 5432;
 
-$db['heroku']['hostname'] = 'localhost';
-$db['heroku']['username'] = 'root';
-$db['heroku']['password'] = '';
-$db['heroku']['database'] = 'saisai_db';
-$db['heroku']['dbdriver'] = 'mysql';
-$db['heroku']['dbprefix'] = '';
-$db['heroku']['pconnect'] = TRUE;
-$db['heroku']['db_debug'] = TRUE;
-$db['heroku']['cache_on'] = FALSE;
-$db['heroku']['cachedir'] = '';
-$db['heroku']['char_set'] = 'utf8';
-$db['heroku']['dbcollat'] = 'utf8_general_ci';
-$db['heroku']['swap_pre'] = '';
-$db['heroku']['autoinit'] = TRUE;
-$db['heroku']['stricton'] = FALSE;
+$db['production']['hostname'] = 'ec2-54-197-250-40.compute-1.amazonaws.com';
+$db['production']['username'] = 'nmdexguksvensg';
+$db['production']['password'] = 'xfzSyA2k-ZwDMr0XZ5QvlYb6bG';
+$db['production']['database'] = 'd6vf676cch33b8';
+$db['production']['dbdriver'] = 'postgre';
+$db['production']['dbprefix'] = '';
+$db['production']['pconnect'] = TRUE;
+$db['production']['db_debug'] = TRUE;
+$db['production']['cache_on'] = FALSE;
+$db['production']['cachedir'] = '';
+$db['production']['char_set'] = 'utf8';
+$db['production']['dbcollat'] = 'utf8_general_ci';
+$db['production']['swap_pre'] = '';
+$db['production']['autoinit'] = TRUE;
+$db['production']['stricton'] = FALSE;
+//$db['production']['port'] = 5432;
 
 
 /* End of file database.php */

@@ -71,7 +71,7 @@ $window.on('load', function()
 
 
 	// Setup slides
-	for ( var k = 0, l = slides.length; k < l; ++ k )
+	for ( var k = 0, l = slides.length; k < l; ++k )
 	{
 		var slide = typeof slides[k] === 'string'
 			? {'class': 'Slide', id: slides[k], container: '#' + slides[k]}

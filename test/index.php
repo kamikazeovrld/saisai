@@ -1,3 +1,3 @@
 <?php 
-	echo 'hello jabu from heroku';
+	echo 'hello jabu from production';
 ?>
