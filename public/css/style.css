@@ -642,9 +642,14 @@ body.scrolling #footer, body.mousemove #footer, #footer:hover, #footer.active {
 
 #intro .logo .logo_piffle {
     /*background: url('../img/intro/logo.png') no-repeat center 110px fixed;*/
+    background: url('../../static/img-og/intro/intro_icon_bg.jpg') no-repeat center fixed;
+    z-index: 1;
+}/*
+#intro .logo .logo_piffle {
+    *//*background: url('../img/intro/logo.png') no-repeat center 110px fixed;*//*
     background: url('../../static/img/intro/intro_icon_bg.png') no-repeat center fixed;
     z-index: 1;
-}
+}*/
 
 /*jabu
 #intro .logo .icon_fg {
@@ -1745,16 +1750,9 @@ body.scrolling #footer, body.mousemove #footer, #footer:hover, #footer.active {
     #intro .logo .logo_piffle {
         background: url('http://res.cloudinary.com/saisai-co/image/upload/v1404040807/logo-1_oaw7zr.png') no-repeat center 220px fixed;
     }
-/*
-
-    #intro .logo .icon_fg {
-        background: url('../img/intro/intro_icon_fg.png') no-repeat center 150px fixed;
-    }
-*/
 
     #intro .logo .icon_bg {
-        /*background: url('../img/intro/intro_icon_bg.png') no-repeat center 150px fixed;*/
-        background: url('../../static/img/intro/intro_icon_bg.png') no-repeat center 150px fixed;
+        background: url('../../static/img-og/intro/intro_icon_bg.jpg') no-repeat center 150px fixed;
     }
 
     #intro h1 {
